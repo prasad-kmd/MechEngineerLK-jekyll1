@@ -1,0 +1,7 @@
+- name: John Doe
+  avatar: /assets/images/authors/john-doe.jpg
+  twitter: johndoe
+
+- name: Jane Doe
+  avatar: /assets/images/authors/jane-doe.jpg
+  twitter: janedoe

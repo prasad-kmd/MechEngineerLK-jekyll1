@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7J2hSMouHjK9UeAGUsqG/hBOgW/GqM0dvG31M4UrEoObG7/mcL5A" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-vZIs9ANlsGn7T40SqnScB/2QIF6DnmRBr4JvB6Q2UaJqjM9L2pEw/LImTnTjCqS/," crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZIs9ANlsGn7T40SqnScB/2QIF6DnmRBr4JvB6Q2UaJqjM9L2pEw/LImTnTjCqS/" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+  <style>
+    .dark {
+      --tw-bg-opacity: 1;
+      background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl"><a href="/">{{ site.title }}</a></h1>
+    <nav>
+      <a href="/" class="px-2">Home</a>
+      <a href="/about.html" class="px-2">About</a>
+      <button id="dark-mode-toggle" class="px-2">Toggle Dark Mode</button>
+    </nav>
+  </header>
+  <main class="container mx-auto p-4">
+    {{ content }}
+  </main>
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-blue-500 w-0"></div>
+  <button id="scroll-to-top" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+  <footer class="bg-gray-800 text-white p-4 text-center">
+    <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
