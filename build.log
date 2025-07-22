@@ -1,0 +1,111 @@
+  Logging at level: debug
+    Jekyll Version: 4.4.1
+Configuration file: /app/_config.yml
+         Requiring: jekyll-feed
+         Requiring: jekyll-archives
+            Source: /app
+       Destination: /app/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+           Reading: /_layouts/archive.html
+           Reading: /_layouts/default.html
+           Reading: /_layouts/page.html
+           Reading: /_layouts/post.html
+       EntryFilter: excluded /Gemfile.lock
+       EntryFilter: excluded /Gemfile
+       EntryFilter: excluded /.jekyll-cache
+           Reading: _posts/2024-01-01-welcome-to-jekyll.md
+           Reading: _posts/2024-01-02-another-post.md
+       EntryFilter: excluded /vendor/bundle
+           Reading: assets/css/style.css
+           Reading: about.md
+           Reading: index.html
+           Reading: 404.html
+           Reading: _data/authors.yml
+        Generating: Jekyll::Archives::Archives finished in 0.001403295 seconds.
+       Jekyll Feed: Generating feed for posts
+        Generating: JekyllFeed::Generator finished in 0.000694315 seconds.
+         Rendering: _posts/2024-01-01-welcome-to-jekyll.md
+  Pre-Render Hooks: _posts/2024-01-01-welcome-to-jekyll.md
+  Rendering Markup: _posts/2024-01-01-welcome-to-jekyll.md
+Post-Convert Hooks: _posts/2024-01-01-welcome-to-jekyll.md
+  Rendering Layout: _posts/2024-01-01-welcome-to-jekyll.md
+         Rendering: _posts/2024-01-02-another-post.md
+  Pre-Render Hooks: _posts/2024-01-02-another-post.md
+  Rendering Markup: _posts/2024-01-02-another-post.md
+Post-Convert Hooks: _posts/2024-01-02-another-post.md
+  Rendering Layout: _posts/2024-01-02-another-post.md
+         Rendering: 404.html
+  Pre-Render Hooks: 404.html
+  Rendering Markup: 404.html
+Post-Convert Hooks: 404.html
+  Rendering Layout: 404.html
+         Rendering: about.md
+  Pre-Render Hooks: about.md
+  Rendering Markup: about.md
+Post-Convert Hooks: about.md
+  Rendering Layout: about.md
+         Rendering: index.html
+  Pre-Render Hooks: index.html
+  Rendering Liquid: index.html
+         Rendering: _posts/2024-01-02-another-post.md/#excerpt
+  Pre-Render Hooks: _posts/2024-01-02-another-post.md/#excerpt
+  Rendering Markup: _posts/2024-01-02-another-post.md/#excerpt
+Post-Convert Hooks: _posts/2024-01-02-another-post.md/#excerpt
+         Rendering: _posts/2024-01-01-welcome-to-jekyll.md/#excerpt
+  Pre-Render Hooks: _posts/2024-01-01-welcome-to-jekyll.md/#excerpt
+  Rendering Markup: _posts/2024-01-01-welcome-to-jekyll.md/#excerpt
+Post-Convert Hooks: _posts/2024-01-01-welcome-to-jekyll.md/#excerpt
+  Rendering Markup: index.html
+Post-Convert Hooks: index.html
+  Rendering Layout: index.html
+         Rendering: assets/css/style.css
+  Pre-Render Hooks: assets/css/style.css
+  Rendering Markup: assets/css/style.css
+Post-Convert Hooks: assets/css/style.css
+  Rendering Layout: assets/css/style.css
+         Rendering: tags/sample/index.html
+  Pre-Render Hooks: tags/sample/index.html
+  Rendering Markup: tags/sample/index.html
+Post-Convert Hooks: tags/sample/index.html
+  Rendering Layout: tags/sample/index.html
+         Rendering: tags/blog/index.html
+  Pre-Render Hooks: tags/blog/index.html
+  Rendering Markup: tags/blog/index.html
+Post-Convert Hooks: tags/blog/index.html
+  Rendering Layout: tags/blog/index.html
+         Rendering: categories/jekyll/index.html
+  Pre-Render Hooks: categories/jekyll/index.html
+  Rendering Markup: categories/jekyll/index.html
+Post-Convert Hooks: categories/jekyll/index.html
+  Rendering Layout: categories/jekyll/index.html
+         Rendering: categories/update/index.html
+  Pre-Render Hooks: categories/update/index.html
+  Rendering Markup: categories/update/index.html
+Post-Convert Hooks: categories/update/index.html
+  Rendering Layout: categories/update/index.html
+         Rendering: categories/sample/index.html
+  Pre-Render Hooks: categories/sample/index.html
+  Rendering Markup: categories/sample/index.html
+Post-Convert Hooks: categories/sample/index.html
+  Rendering Layout: categories/sample/index.html
+         Rendering: feed.xml
+  Pre-Render Hooks: feed.xml
+  Rendering Liquid: feed.xml
+  Rendering Markup: feed.xml
+Post-Convert Hooks: feed.xml
+  Rendering Layout: feed.xml
+           Writing: /app/_site/404.html
+           Writing: /app/_site/about.html
+           Writing: /app/_site/index.html
+           Writing: /app/_site/assets/css/style.css
+           Writing: /app/_site/tags/sample/index.html
+           Writing: /app/_site/tags/blog/index.html
+           Writing: /app/_site/categories/jekyll/index.html
+           Writing: /app/_site/categories/update/index.html
+           Writing: /app/_site/categories/sample/index.html
+           Writing: /app/_site/feed.xml
+           Writing: /app/_site/jekyll/update/2024/01/01/welcome-to-jekyll.html
+           Writing: /app/_site/sample/2024/01/02/another-post.html
+                    done in 0.106 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
