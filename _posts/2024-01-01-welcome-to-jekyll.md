@@ -19,10 +19,17 @@ Here is an example of a KaTeX formula: $$E=mc^2$$
 
 ## MermaidJS Example
 
-<div class="mermaid">
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+<div class="ui card">
+  <div class="content">
+    <div class="header">Diagram</div>
+  </div>
+  <div class="content">
+    <div class="mermaid">
+    graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+    </div>
+  </div>
 </div>

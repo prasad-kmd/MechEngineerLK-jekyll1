@@ -1,20 +1,28 @@
 ---
 layout: default
 ---
-<h1 class="text-3xl font-bold mb-4">{{ page.title }}</h1>
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-  {% for post in page.posts %}
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      {% if post.thumbnail %}
-        <a href="{{ post.url }}">
-          <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
-        </a>
-      {% endif %}
-      <div class="p-4">
-        <h2 class="text-xl font-bold mb-2"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="text-gray-700">{{ post.excerpt }}</p>
+<div class="ui segment">
+  <h1 class="ui header">{{ page.title }}</h1>
+  <div class="ui divided items">
+    {% for post in page.posts %}
+      <div class="item">
+        {% if post.thumbnail %}
+          <div class="image">
+            <a href="{{ post.url }}">
+              <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+            </a>
+          </div>
+        {% endif %}
+        <div class="content">
+          <a class="header" href="{{ post.url }}">{{ post.title }}</a>
+          <div class="meta">
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+          <div class="description">
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

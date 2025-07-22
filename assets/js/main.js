@@ -1,28 +1,28 @@
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-const scrollProgress = document.getElementById('scroll-progress');
-const scrollToTopBtn = document.getElementById('scroll-to-top');
-
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark');
-});
-
-window.addEventListener('scroll', () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
-  scrollProgress.style.width = `${scrollPercent}%`;
-
-  if (scrollTop > 200) {
-    scrollToTopBtn.classList.remove('hidden');
-  } else {
-    scrollToTopBtn.classList.add('hidden');
-  }
-});
-
-scrollToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+$(document).ready(function() {
+  // Dark mode toggle
+  $('#dark-mode-toggle').on('click', function() {
+    $('body').toggleClass('dark');
   });
+
+  // Scroll progress
+  $(window).on('scroll', function() {
+    const scrollTop = $(window).scrollTop();
+    const docHeight = $(document).height() - $(window).height();
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    $('#scroll-progress .bar').css('width', scrollPercent + '%');
+
+    if (scrollTop > 200) {
+      $('#scroll-to-top').fadeIn();
+    } else {
+      $('#scroll-to-top').fadeOut();
+    }
+  });
+
+  // Scroll to top
+  $('#scroll-to-top').on('click', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+
+  // Sidebar
+  $('.ui.sidebar').sidebar('attach events', '.toc.item');
 });

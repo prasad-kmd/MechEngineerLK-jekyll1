@@ -22,9 +22,9 @@ Configuration file: /app/_config.yml
            Reading: index.html
            Reading: 404.html
            Reading: _data/authors.yml
-        Generating: Jekyll::Archives::Archives finished in 0.001403295 seconds.
+        Generating: Jekyll::Archives::Archives finished in 0.002859496 seconds.
        Jekyll Feed: Generating feed for posts
-        Generating: JekyllFeed::Generator finished in 0.000694315 seconds.
+        Generating: JekyllFeed::Generator finished in 0.003527043 seconds.
          Rendering: _posts/2024-01-01-welcome-to-jekyll.md
   Pre-Render Hooks: _posts/2024-01-01-welcome-to-jekyll.md
   Rendering Markup: _posts/2024-01-01-welcome-to-jekyll.md
@@ -107,5 +107,5 @@ Post-Convert Hooks: feed.xml
            Writing: /app/_site/feed.xml
            Writing: /app/_site/jekyll/update/2024/01/01/welcome-to-jekyll.html
            Writing: /app/_site/sample/2024/01/02/another-post.html
-                    done in 0.106 seconds.
+                    done in 1.073 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
